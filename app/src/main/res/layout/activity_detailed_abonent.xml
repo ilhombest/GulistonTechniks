@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedAbonent">
+
+    <TextView
+        android:id="@+id/tvAbonentName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:padding="0dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/tvInfoName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/tvAbonentSurename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentName"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentName"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAbonentStreet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentSurename"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentSurename"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentSurename"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAbonentHouse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentStreet"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentStreet"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentStreet"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAbonentKvartira"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentHouse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentHouse"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentHouse"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAbonentBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentKvartira"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentKvartira"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentKvartira"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvAbonentTarif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentBalance"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentBalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentBalance"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edSumma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Введите сумму"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <Button
+        android:id="@+id/btOplata"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3AEA43"
+        android:text="Оплатить"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edSumma"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edSumma"
+        app:layout_constraintTop_toBottomOf="@+id/edSumma" />
+
+    <Button
+        android:id="@+id/btHistoryOplata"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#7488ED"
+        android:text="История платежей"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btOplata"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btOplata"
+        app:layout_constraintTop_toBottomOf="@+id/btOplata" />
+
+    <ProgressBar
+        android:id="@+id/oplataLoad"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btHistoryOplata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btOplata"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvInfoName"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Имя :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/tvInfoSurename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Фамилия :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoName"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoName" />
+
+    <TextView
+        android:id="@+id/tvInfoStreet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Улица :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoSurename"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoSurename" />
+    <TextView
+        android:id="@+id/tvInfoHouse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Дом :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoStreet"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoStreet" />
+    <TextView
+        android:id="@+id/tvInfoKvartira"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Квартира :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoHouse"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoHouse" />
+    <TextView
+        android:id="@+id/tvInfoBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Баланс :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoKvartira"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoKvartira" />
+    <TextView
+        android:id="@+id/tvInfoTarif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Тариф :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoBalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoBalance" />
+
+    <EditText
+        android:id="@+id/edComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Комментарий к платежу"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edSumma"
+        app:layout_constraintStart_toStartOf="@+id/edSumma"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <Button
+        android:id="@+id/btZayavka"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A05CED"
+        android:text="Оставить Заявку"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btHistoryOplata"
+        app:layout_constraintStart_toStartOf="@+id/btHistoryOplata"
+        app:layout_constraintTop_toBottomOf="@+id/btHistoryOplata" />
+
+    <TextView
+        android:id="@+id/tvInfoMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Телефон :"
+        android:textColor="#220808"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfoName"
+        app:layout_constraintStart_toStartOf="@+id/tvInfoTarif"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoTarif" />
+
+    <TextView
+        android:id="@+id/tvAbonentMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvAbonentTarif"
+        app:layout_constraintStart_toStartOf="@+id/tvAbonentTarif"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbonentTarif"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
